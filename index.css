@@ -1,1 +1,77 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #19a2ae;
+}
+
+#top-img {
+  position: fixed;
+  top: -90%;
+  left: -25%;
+  height: auto;
+}
+
+#bottom-img {
+  position: fixed;
+  bottom: -100%;
+  right: -20%;
+  height: auto;
+}
+
+#id-card {
+  position: fixed;
+  top: 25%;
+  left: 38%;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#id-card #img-pattern {
+  width: 300px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#id-card #avatar {
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#id-card #intro {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#id-card #user-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  border-top: 1px solid #9f9090;
+}
+
+#id-card #user-data div {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
