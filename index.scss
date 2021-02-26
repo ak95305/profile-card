@@ -5,23 +5,33 @@
 }
 body{
     background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.6rem;
 }
 
 #top-img{
     position: fixed;
     top: -90%;
-    left: -25%;
+    right: 53%;        
     height: auto;
 }
 
 #bottom-img{
     position: fixed;
     bottom: -100%;
-    right: -20%;
+    left: 46%;
     height: auto;
 }
 
 #id-card{
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    margin: 0% auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #fff;
     #img-pattern{
         width: 300px;
         border-top-right-radius: 10px;
@@ -34,29 +44,82 @@ body{
         border: 5px solid rgb(255, 255, 255);
         border-radius: 50%;
     }
-    position: fixed;
-    top: 25%;
-    left: 38%;
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    background-color: #fff;
+    #grey{
+        color: hsl(0, 0%, 59%);
+    }    
+
     #intro{
         margin-top: 50px;
         display: flex;
         justify-content: center;
     }
+    #location{
+        text-align: center;
+        margin-top: 10px;
+    }
 
     #user-data{
         display: flex;
         justify-content: space-around;
-        margin-top: 20px;
+        margin-top: 15px;
         align-items: center;
         height: 90px;
-        border-top: 1px solid rgb(159, 144, 144);
+        border-top: 1px solid hsl(0, 0%, 59%);
         div{
             text-align: center;
+            line-height: 20px;
         }
     }
 
+}
+
+@media only screen and (max-width: 900px) {
+    #id-card{
+        position: fixed;
+        top: 25%;
+        left: 35%;
+  }
+  #top-img{
+    position: fixed;
+    top: -80%;
+    right: 53%;        
+    height: auto;
+}
+
+#bottom-img{
+    position: fixed;
+    bottom: -90%;
+    left: 46%;
+    height: auto;
+}
+}
+@media only screen and (max-width: 600px) {
+    #id-card{
+        position: fixed;
+        top: 25%;
+        left: 20%;
+  }
+  
+}
+
+@media only screen and (max-width: 375px) {
+    #id-card{
+        position: fixed;
+        top: 25%;
+        left: 10%;
+  }
+  #top-img{
+    position: fixed;
+    top: -70%;
+    right: 53%;        
+    height: auto;
+}
+
+#bottom-img{
+    position: fixed;
+    bottom: -80%;
+    left: 40%;
+    height: auto;
+}
+  
 }
